@@ -133,7 +133,7 @@ project{
     flex-direction: column;
     border: 5px solid black;
     width: 30%;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     text-align: center;
     font-size: 20px;
@@ -151,9 +151,9 @@ project a:hover{
     cursor: pointer;
 }
 
-#closeout{
+/* #closeout{
     height: 400px;
-}
+} */
 
 project img{
     width: 100%
