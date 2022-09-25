@@ -33,29 +33,31 @@ h1{
     text-align: center;
 }
 .division{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     position: relative;
     flex: 1 1 30%;
-    height: 400px;
+    /* height: 400px; */
     width: 30%;
     border: 5px solid black;
     margin: 10px;
-    justify-content: center;
-    display: block;
+    /* display: block; */
     text-align: center;
-    min-width: 500px;
+    min-width: 400px;
     
     
+}
+.division img{
+    width: 100%;
+    height: auto;
 }
 a{
     text-decoration: none;
     color: black;
    
 }
-.division img{
-    max-height: 75%;
-    max-width: 100%;
-    background-color: black
-}
+
 
 .big-graph{
     width: 100%;
