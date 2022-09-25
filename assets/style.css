@@ -27,6 +27,8 @@ header{
 header h1{
     font-size: 40px;
     width: 50%;
+    text-align: center;
+    padding-bottom: 10px;
 }
 second-header{
     display: flex;
@@ -128,7 +130,7 @@ other-projects{
     
 }
 project{
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-direction: column;
     border: 5px solid black;
@@ -172,4 +174,11 @@ project img{
     project{
         width: 90%;
     }
+}
+.big-gif{
+    width: 100%;
+    height:auto
+}
+h1{
+    text-align: center;
 }

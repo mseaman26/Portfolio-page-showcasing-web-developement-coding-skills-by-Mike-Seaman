@@ -19,6 +19,7 @@ header{
 }
 header h1{
     font-size: 40px;
+    padding-bottom: 10px;
     
 }
 body{
@@ -33,7 +34,7 @@ h1{
 }
 .division{
     position: relative;
-    display: flex;
+    flex: 1 1 30%;
     height: 400px;
     width: 30%;
     border: 5px solid black;
@@ -55,21 +56,17 @@ a{
     max-width: 100%;
     background-color: black
 }
-big-graph img{
-    position: relative;
-    display: grid;
-    height: 50%;  
-}
+
 .big-graph{
     width: 100%;
     height:auto
 }
-@media screen and (max-width: 992) {
+@media screen and (max-width: 992px) {
     .division{
         width: 45%
     }
 }
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
     .division{
         width: 90%
     }
