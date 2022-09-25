@@ -1,3 +1,5 @@
+
+/* Variables for usage throughout the CSS file */
 :root{
     --link-color: whitesmoke;
     --link-visited-color: aqua;
@@ -5,11 +7,14 @@
     --header-text-color: rgb(255, 242, 4);
     --alt-text-color: rgb(255, 166, 0);
     --background-color: #2a607c;
+    --border: (5px solid black)
     --nicer-font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
+    /* I added “position: relative” because I thought later it might help if I decided to include any items with absolute positioning within the body */
     position: relative;
     height: 1532px;
+    /* The background picture is a photo taken by a friend of mine.  It is of ocean beach during an historic swell, taken from way up on top of the hill */
     background-image: url(./Images/ocean_beach.JPG);
     background-repeat: repeat-y;
     background-size: cover;
@@ -30,6 +35,7 @@ header h1{
     text-align: center;
     padding-bottom: 10px;
 }
+/* Decided to have two headers 🤷‍♂️ */
 second-header{
     display: flex;
     position: relative;
@@ -46,12 +52,11 @@ nav{
     color: black;
     margin-right: 5px;
 }
+/* I didn’t bother with coloring for the “visited” status for the anchor elements */
 a{
     color: var(--link-color);
 }
-/* a:visited{
-    color: var(--link-visited-color)
-} */
+
 a:active{
     color: var(--link-active-color);
 }
@@ -69,11 +74,14 @@ main{
     justify-content: right;
     
 }
+/* contains multiple boxes that pertain to the featured project */
 featured-box{
+    /* I tried to set the border values to a single variable, but was not successful */
     border: 5px solid black;
     margin-bottom: 10px;
     margin-right: 10px;
 }
+/* Separate link for the git repo */
 horiseon-git{
     font-size: 30px;
     justify-content: center;
@@ -109,7 +117,6 @@ about-me-section p{
     color: var(--alt-text-color);
 }
 #heriseon{
-    display: block;
     max-width:300px;
     height: auto;
     margin-bottom: 10px;
@@ -117,18 +124,19 @@ about-me-section p{
 #hike{
     position: relative;
     height: 300px;
-    float: left;
     margin: 10px;
     
 }
-
-#feature-git :hover{
-    height: 100px;
-}
+/* Makes the hovering very noticeable */
 featured-box a:hover{
     background-color: white;  
     cursor: pointer;
     opacity: .5;
+}
+h2{
+    color: var(--link-color);
+    font-family: var(--nicer-font);
+    
 }
 other-projects{
     display: flex;
@@ -136,13 +144,13 @@ other-projects{
     justify-content: space-around;
     
 }
-/*TODO: figure out while baseball project doest go white all the way to the bottom on hover*/
+
 project{
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     border: 5px solid black;
-    width: 30%;
+    /* Makes it so that there are three columns in the “additional projects” section…until the screen size is reduced */
+    width: 30%;  
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -152,19 +160,16 @@ project{
     
     
     
+    
 }
 project a{
     text-decoration: none;
 }
-project :hover{
+project:hover{
     background-color: white;  
     cursor: pointer;
     opacity: .5;
 }
-
-/* #closeout{
-    height: 400px;
-} */
 
 project img{
     width: 100%
@@ -188,6 +193,12 @@ project img{
     width: 100%;
     height:auto
 }
-h1, h2{
+h1, h2, h3{
     text-align: center;
+}
+h3{
+    color: var(--link-color)
+}
+footer h3{
+    color: var(--link-color)
 }
