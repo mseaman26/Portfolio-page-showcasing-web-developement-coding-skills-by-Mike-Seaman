@@ -92,12 +92,14 @@ featured-box a{
     font-family: var(--nicer-font);
     color: var(--link-color);
 }
+
 about-me-section{
     display: flex;
     flex-direction: column;
     width: 320px;
     border: 5px solid black;
     margin-bottom: 10px;
+    justify-content: space-around;
 }
 about-me-section p{
     margin-top: 30px;
@@ -119,9 +121,14 @@ about-me-section p{
     margin: 10px;
     
 }
+
+#feature-git :hover{
+    height: 100px;
+}
 featured-box a:hover{
     background-color: white;  
     cursor: pointer;
+    opacity: .5;
 }
 other-projects{
     display: flex;
@@ -129,13 +136,14 @@ other-projects{
     justify-content: space-around;
     
 }
+/*TODO: figure out while baseball project doest go white all the way to the bottom on hover*/
 project{
     /* position: relative; */
     display: flex;
     flex-direction: column;
     border: 5px solid black;
     width: 30%;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 20px;
@@ -148,9 +156,10 @@ project{
 project a{
     text-decoration: none;
 }
-project a:hover{
+project :hover{
     background-color: white;  
     cursor: pointer;
+    opacity: .5;
 }
 
 /* #closeout{
@@ -179,6 +188,6 @@ project img{
     width: 100%;
     height:auto
 }
-h1{
+h1, h2{
     text-align: center;
 }
