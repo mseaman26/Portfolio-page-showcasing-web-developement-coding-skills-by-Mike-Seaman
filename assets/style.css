@@ -131,16 +131,15 @@ project{
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 5px solid black;
-    min-width: 300px;
-    min-height: 400px;
-    max-width: 700px;
+    border: 5px solid red;
+    width: 30%;
     justify-content: center;
     align-items: center;
     text-align: center;
     font-size: 20px;
     color: var(--link-color);
     margin: 10px;
+    
     
     
 }
@@ -151,22 +150,27 @@ project a:hover{
     background-color: white;  
     cursor: pointer;
 }
-project h3{
-    
+#graphs-thumbnail{
+    width: 100%;
 }
 #closeout{
     height: 400px;
 }
 #mini-project{
-    height: 400px;
+    width: 100%;
 }
-#graphs-thumbnail{
-    height: 400px;
-    
+
+@media screen and (max-width: 992px) {
+    project{
+        width: 45%;
+    }
 }
 @media screen and (max-width: 768px) {
     main{
         flex-direction: column;
         align-items: center;
+    }
+    project{
+        width: 90%;
     }
 }

@@ -1,5 +1,66 @@
-division{
-    min-height: 300px;
-    min-width: 300px;
+:root{
+    --link-color: whitesmoke;
+    --link-visited-color: aqua;
+    --link-active-color: blue;
+    --header-text-color: rgb(255, 242, 4);
+    --alt-text-color: rgb(255, 166, 0);
+    --background-color: #2a607c;
+    --nicer-font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    display: flex;
+    text-align: center;
+    font-family: var(--nicer-font);
+    background-color: var(--background-color);
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    color: var(--header-text-color)
+}
+header h1{
+    font-size: 40px;
+    
+}
+body{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+h1{
+    text-align: center;
+}
+.division{
+    position: relative;
+    display: flex;
+    height: 400px;
+    width: 30%;
     border: 5px solid black;
+    margin: 10px;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    min-width: 500px;
+    
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+   
+}
+.division img{
+    max-height: 75%;
+    max-width: 100%;
+    background-color: black
+}
+big-graph img{
+    position: relative;
+    display: grid;
+    height: 50%;  
+}
+.big-graph{
+    width: 100%;
+    height:auto
 }
