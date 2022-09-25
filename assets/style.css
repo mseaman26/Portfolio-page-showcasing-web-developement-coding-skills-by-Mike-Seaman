@@ -131,7 +131,7 @@ project{
     position: relative;
     display: flex;
     flex-direction: column;
-    border: 5px solid red;
+    border: 5px solid black;
     width: 30%;
     justify-content: center;
     align-items: center;
@@ -150,14 +150,13 @@ project a:hover{
     background-color: white;  
     cursor: pointer;
 }
-#graphs-thumbnail{
-    width: 100%;
-}
+
 #closeout{
     height: 400px;
 }
-#mini-project{
-    width: 100%;
+
+project img{
+    width: 100%
 }
 
 @media screen and (max-width: 992px) {
