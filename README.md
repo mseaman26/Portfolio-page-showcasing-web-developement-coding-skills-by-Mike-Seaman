@@ -22,7 +22,7 @@ This project primarily involved the HTML and CSS languages. However I also used 
         <featured-box>
             <a href="https://mseaman26.github.io/Mikes-wonderful-refactoring-of-the-Horiseon-Webpage/" target="_blank" >
                 <h2>Here is my most recent solo project.  I refactored some code for a website called Heriseon.  The code is in deployed on Github Pages! Click anywhere in this box to visit!</h2>
-                <img id="heriseon" src="./assets/Images/Heriseon homepage.png" alt="">
+                <img id="heriseon" src="./assets/Images/Heriseon homepage.png" alt="thumbnail of the Horiseon website">
             </a>
             <horiseon-git>
                 <a href="https://github.com/mseaman26/Mikes-wonderful-refactoring-of-the-Horiseon-Webpage" target="_blank" id="feature-git">
