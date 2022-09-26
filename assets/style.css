@@ -81,6 +81,12 @@ featured-box{
     margin-bottom: 10px;
     margin-right: 10px;
 }
+.featured-box{
+    /* I tried to set the border values to a single variable, but was not successful */
+    border: 5px solid black;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
 /* Separate link for the git repo */
 horiseon-git{
     font-size: 30px;
@@ -88,6 +94,19 @@ horiseon-git{
     display:flex;
 }
 featured-box a{
+    display: flex;
+    flex: 1 1 600px;
+    position: relative;
+    text-decoration: none;
+    border: 5px solid black;
+    margin: 10px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--nicer-font);
+    color: var(--link-color);
+}
+.featured-box a{
     display: flex;
     flex: 1 1 600px;
     position: relative;
@@ -127,7 +146,7 @@ about-me-section p{
     margin: 10px;
     
 }
-/* Makes the hovering very noticeable */
+/* Makes the hovering very visually noticeable */
 featured-box a:hover{
     background-color: white;  
     cursor: pointer;
@@ -181,6 +200,7 @@ project img{
     }
 }
 @media screen and (max-width: 768px) {
+    /* using tow methods to do esentially the same thing.  I suppose this is an example of me trying out different ways of doing things to hopefully settle on the right one */
     main{
         flex-direction: column;
         align-items: center;
