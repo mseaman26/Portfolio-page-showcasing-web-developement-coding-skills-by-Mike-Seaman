@@ -33,12 +33,11 @@ header, .second-header{
 
 h1, h2, h3{
     text-align: center;
-    /* TODO: figure out why the aligning worked here, but not the font family in some areas*/
     font-family: var(--nicer-font);
     
     
 }
-/* TODO: figure out why font-family will not work on the h3s within the projects */
+
 h3{
     font-size: 20px;
     color: var(--link-color);
@@ -65,17 +64,18 @@ nav{
 nav a{
     margin: 0px 10px 0px 10px;
     color: var(--aqua);
+    
 }
 
 /* I didn’t bother with coloring for the “visited” status for the anchor elements */
-a{
-    color: var(--link-color);
+nav a:active{
+    color: var(--link-active-color);
 }
 
 a:active{
     color: var(--link-active-color);
 }
-a:hover{
+a:hover {
     color: black;
 }
 p{
@@ -147,9 +147,11 @@ main{
 }
 /* Makes the hovering very visually noticeable */
 #featured-box a:hover, .project:hover{
+    /* for some reason, this color property didn't apply to all the items I inteded it to */
+    color: black; 
     background-color: white;  
     cursor: pointer;
-    opacity: .5;
+    /* opacity: .5; */
 }
 
 #other-projects{
