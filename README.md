@@ -14,7 +14,8 @@ This project primarily involved the HTML and CSS languages. However I also used 
 - variables, for reuse of colors
 
 ## Notable Methods
-- One key method I used with the HTML, was making up names for HTML elements and treating them as if they were classes.  For example, I have an element called \<project\>, and another one called \<division\>.  I learned that this could be done from a partner in class.  I'm not sure if this is common practice, or best practice, but it did ultimately get results that I intended. I'm starting to think that it's better practice to use the built-in semantic elements when possible and \<div\> elements when it's not possible. Below is an example.  Notice the tags called \<featured-box\>, \<horiseon-git\>, and \<about-me-section\>
+- I had originally experimented with using a lot of custom HTML tags, but learned that this is not best practice, so I refactored my code to use proper semantic HTML elements.  Below is an example of the code before
+
 
 ```html
  <!-- The “main” section included a “featured project” and an “About Me” section.  Using semantic tags to make it easier for me to differentiate items -->
@@ -35,28 +36,53 @@ This project primarily involved the HTML and CSS languages. However I also used 
             </p>
         </about-me-section>
 ```
+and here is the code after:
 
+
+```html
+<main>
+    <!-- The featured project is contained within a box that features a clickable image that links to the deployed projects as well as a clickable box that links to the githup repo -->
+        <section id="featured-box">
+            <a href="https://mseaman26.github.io/Mikes-wonderful-refactoring-of-the-Horiseon-Webpage/" target="_blank" >
+                <h2>Here is my most recent solo project.  I refactored some code for a website called Heriseon.  The code in deployed on Github Pages! Click anywhere in this box to visit!</h2>
+                <img id="heriseon" src="./assets/Images/Heriseon homepage.png" alt="A thumbnail image of the Horiseon website">
+            </a>
+            
+                <a href="https://github.com/mseaman26/Mikes-wonderful-refactoring-of-the-Horiseon-Webpage" target="_blank" id="feature-git">
+                Feel free to visit the Github repository for this project by clicking here!</a>
+            
+        </section>
+        <section id="about-me-section">
+            <h2>About Mike Seaman:</h2>
+            <img id="hike" src="./assets/Images/Mike_on_hike.JPG" alt="Mike on a hike">
+            <p>I am a student attending the UC Berkeley full-stack web development bootcamp.  I have had an interest in coding for some time, but have never taken serious action to learn the skill…until NOW!  I enjoy surfing, hiking, baseball, and classical piano. I'm eager to learn more and practice more so that I can make great projects with ease!  
+
+            </p>
+        </section>
+    </main>
+```
 
 
 - I used a reset.css file.  I simply took one from one of our activities, figuring this was good practice
 
-- I split up the css styling into two separate files.  This is another method that left me uncertain as to weather or not I was using best practice, but again, it got the results I needed
+- I split up the css styling into two separate files.  This is another method that left me uncertain as to weather or not I was using best practice, but again, it got the results I intended
 
-- I don't like when flex wrap creates a new row one element at a time.  The grid layout gets lost when this happens. To avoid this, in certain sections, I assigned the width of these elements to a percentage of the screen width.  I would then use  media queries to change that percentage (make it larger) when the screen got smaller.  I imagine I'll learn a better way to do this as I further my knowledge. Below is a snippet shoeing those media queries
+- I assigned the width of some elements to a percentage of the screen width.  I would then use  media queries to change that percentage (make it larger) when the screen got smaller.  I imagine I'll learn a better way to do this as I further my knowledge. Below is a snippet shoeing those media queries
 
 ```css
 @media screen and (max-width: 992px) {
-    project{
-        width: 45%;
+    .project{
+        width: 40%;
     }
 }
+
 @media screen and (max-width: 768px) {
-    /* using tow methods to do esentially the same thing.  I suppose this is an example of me trying out different ways of doing things to hopefully settle on the right one */
+   /* For elements that weren’t assigned width using a percentage, I used this method to make them fit nicely on a phone screen */
     main{
         flex-direction: column;
         align-items: center;
     }
-    project{
+    .project{
         width: 90%;
     }
 }

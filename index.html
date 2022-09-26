@@ -11,6 +11,7 @@
     <header>
         <h1>Welcome to Mike Seaman's Portfolio Website!</h1>
         <nav>
+            <!-- nav contains external links as well as links that take the user to different parts of the page -->
             <a href="https://github.com/mseaman26">Github</a>
             <a href="https://www.linkedin.com/in/michael-seaman-120a59250/">Linkedin</a>
             <a href="#about-me-section">About Me</a>
@@ -20,11 +21,13 @@
         </nav>
       
     </header>
-    <second-header>
+    <!-- This was just a way of separating two headers at the top of the page.  Not entirely sure why I did this, but I kept it -->
+    <section class='second-header'>
         <p>I am an aspiring web developer and I love to code!  I built this site to showcase what I can do!  I  hope you enjoy!</p>
-    </second-header>
-    <!-- The “main” section included a “featured project” and an “About Me” section.  Using semantic tags to make it easier for me to differentiate items -->
+    </section>
+   
     <main>
+        <!-- The featured project is contained within a box that features a clickable image that links to the deployed projects as well as a clickable box that links to the githup repo -->
         <section id="featured-box">
             <a href="https://mseaman26.github.io/Mikes-wonderful-refactoring-of-the-Horiseon-Webpage/" target="_blank" >
                 <h2>Here is my most recent solo project.  I refactored some code for a website called Heriseon.  The code in deployed on Github Pages! Click anywhere in this box to visit!</h2>
@@ -35,16 +38,17 @@
                 Feel free to visit the Github repository for this project by clicking here!</a>
             
         </section>
-        <div id="about-me-section">
+        <!-- Another container with it’s own border -->
+        <section id="about-me-section">
             <h2>About Mike Seaman:</h2>
             <img id="hike" src="./assets/Images/Mike_on_hike.JPG" alt="Mike on a hike">
             <p>I am a student attending the UC Berkeley full-stack web development bootcamp.  I have had an interest in coding for some time, but have never taken serious action to learn the skill…until NOW!  I enjoy surfing, hiking, baseball, and classical piano. I'm eager to learn more and practice more so that I can make great projects with ease!  
 
             </p>
-        </div>
+        </section>
     </main>
     <h2>Other projects</h2>
-    <!-- The other three projects are with in the “project” tags, allowing for their own styling -->
+    <!-- The other three projects are within the "project class, allowing them to all share styling properties-->
     <section id="other-projects">
             <a href="https://deltabreaker.github.io/mini-project-flex-usage/" class="project" target="_blank">
                 <h3>
@@ -68,6 +72,7 @@
                 <img src="./assets/Images/Surfing.GIF" alt="" id="closeout">
             </a>       
     </section>
+    <!-- Gott a have a footer section, amiright? -->
     <footer>
         <h3>
             I hope you enjoyed visiting this page as much as I enjoyed making it!

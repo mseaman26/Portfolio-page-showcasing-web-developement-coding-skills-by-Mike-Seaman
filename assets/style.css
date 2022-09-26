@@ -2,12 +2,11 @@
 /* Variables for usage throughout the CSS file */
 :root{
     --link-color: whitesmoke;
-    --link-visited-color: aqua;
+    --aqua: aqua;
     --link-active-color: blue;
     --header-text-color: rgb(255, 242, 4);
     --alt-text-color: rgb(255, 166, 0);
     --background-color: #2a607c;
-    --border: (5px solid black)/*couldn't get this variable to work, but left it here in case I can figure it out*/
     --nicer-font:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 body{
@@ -20,7 +19,7 @@ body{
     background-size: cover;
     font-family: var(--nicer-font);
 }
-header{
+header, .second-header{
     display: flex;
     text-align: center;
     font-family: var(--nicer-font);
@@ -30,20 +29,13 @@ header{
     padding-left: 10px;
     color: var(--header-text-color)
 }
-/* Decided to have two headers 🤷‍♂️ */
-second-header{
-    display: flex;
-    position: relative;
-    background-color: var(--background-color);
-    margin: 10px 0px;
-    font-family: var(--nicer-font);
-    padding-left: 10px;
-}
+
 
 h1, h2, h3{
     text-align: center;
     /* TODO: figure out why the aligning worked here, but not the font family in some areas*/
     font-family: var(--nicer-font);
+    
     
 }
 /* TODO: figure out why font-family will not work on the h3s within the projects */
@@ -51,6 +43,9 @@ h3{
     font-size: 20px;
     color: var(--link-color);
     margin-bottom: 10px;
+}
+h2{
+    color: var(--link-color);
 }
 header h1{
     font-size: 40px;
@@ -69,6 +64,7 @@ nav{
 }
 nav a{
     margin: 0px 10px 0px 10px;
+    color: var(--aqua);
 }
 
 /* I didn’t bother with coloring for the “visited” status for the anchor elements */
@@ -120,7 +116,7 @@ main{
     font-family: var(--nicer-font);
     color: var(--link-color);
 }
-
+/* I wanted this “about me” section to have the same height as the “featured” section when they are side-by-side, which it does, but maybe it should have had it’s own height because it can look a little too spaced out at certain browser sizes */
 #about-me-section{
     display: flex;
     flex-direction: column;
@@ -150,16 +146,12 @@ main{
     
 }
 /* Makes the hovering very visually noticeable */
-#featured-box a:hover{
+#featured-box a:hover, .project:hover{
     background-color: white;  
     cursor: pointer;
     opacity: .5;
 }
-h2{
-    color: var(--link-color);
-    font-family: var(--nicer-font);
-    
-}
+
 #other-projects{
     display: flex;
     flex-wrap: wrap;
@@ -182,12 +174,6 @@ h2{
     text-decoration: none;
 }
 
-.project:hover{
-    background-color: white;  
-    cursor: pointer;
-    opacity: .5;
-}
-
 .project img{
     width: 100%
 }
@@ -202,7 +188,7 @@ h2{
 }
 
 @media screen and (max-width: 768px) {
-    /* using tow methods to do esentially the same thing.  I suppose this is an example of me trying out different ways of doing things to hopefully settle on the right one */
+    /* For elements that weren’t assigned width using a percentage, I used this method to make them fit nicely on a phone screen */
     main{
         flex-direction: column;
         align-items: center;
