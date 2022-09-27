@@ -25,7 +25,7 @@ header{
     text-align: center;
     font-family: var(--nicer-font);
     background-color: var(--background-color);
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     color: var(--header-text-color)
 }
