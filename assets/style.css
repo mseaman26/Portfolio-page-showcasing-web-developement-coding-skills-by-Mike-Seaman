@@ -44,6 +44,7 @@ header h1{
     padding-bottom: 10px;
 }
 nav{
+    border: 2px solid black;
     position: relative;
     display: flex;
     width: 30%;
