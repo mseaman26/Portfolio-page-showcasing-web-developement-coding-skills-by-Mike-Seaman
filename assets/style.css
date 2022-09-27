@@ -141,7 +141,6 @@ main{
 }
 /* Makes the hovering very visually noticeable */
 #featured-box>a:hover, .project:hover{
-    /* TODO: figure out why the color doesn't apply to all of the elements I think is should */
     color: black; 
     background-color: white;  
     cursor: pointer;
