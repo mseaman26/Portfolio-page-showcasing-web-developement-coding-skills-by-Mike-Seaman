@@ -7,9 +7,10 @@ https://mseaman26.github.io/Portfolio-page-showcasing-web-developement-coding-sk
 ## Languages Used
 This project primarily involved the HTML and CSS languages. However I also used command line, git, and github for storing the project in a repository and github pages for deployment
 
-## Key Features
+## Notable Features
 - Flexbox functionality, including wrap, align-items, justify-content, grow/shrink, and more
 - pseudo-classes, such as :hover
+- the ::after pseudo class
 - media queries, to make the pages render nicely on different sized screens
 - variables, for reuse of colors
 
@@ -41,7 +42,7 @@ and here is the code after:
 
 ```html
 <main>
-    <!-- The featured project is contained within a box that features a clickable image that links to the deployed projects as well as a clickable box that links to the githup repo -->
+    <!-- The featured project is contained within a box that features a clickable image that links to the deployed project as well as a clickable box that links to the githup repo -->
         <section id="featured-box">
             <a href="https://mseaman26.github.io/Mikes-wonderful-refactoring-of-the-Horiseon-Webpage/" target="_blank" >
                 <h2>Here is my most recent solo project.  I refactored some code for a website called Heriseon.  The code in deployed on Github Pages! Click anywhere in this box to visit!</h2>
@@ -89,5 +90,11 @@ and here is the code after:
 ```
 
 - I used multiple .html files, as mentioned above.  I was just experimenting and it seemed to work fine, so I went with it.
+
+## Things I've learned during this project (or maybe already knew, but relearned):
+- CSS is hard, and possibly not my strong suit
+- Visual design and aesthetics in general are also not my strong suits
+- Organization of code is crucial and must be practiced from the beginning of any project
+- I still enjoy learning code!
 
 

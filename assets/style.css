@@ -19,7 +19,7 @@ body{
     background-size: cover;
     font-family: var(--nicer-font);
 }
-header, .second-header{
+header, header p{
     display: flex;
     text-align: center;
     font-family: var(--nicer-font);
@@ -30,21 +30,10 @@ header, .second-header{
     color: var(--header-text-color)
 }
 
-
-h1, h2, h3{
-    text-align: center;
-    font-family: var(--nicer-font);
-    
-    
-}
-
-h3{
-    font-size: 20px;
-    color: var(--link-color);
-    margin-bottom: 10px;
-}
 h2{
+    text-align: center;
     color: var(--link-color);
+
 }
 header h1{
     font-size: 40px;
@@ -55,7 +44,7 @@ header h1{
 nav{
     display: flex;
     width: 30%;
-    justify-content: right;
+    float: right;
     justify-content: space-between;
     color: black;
     margin-right: 5px;
@@ -64,7 +53,9 @@ nav{
 nav a{
     margin: 0px 10px 0px 10px;
     color: var(--aqua);
-    
+}
+nav a::after{
+    content: '😁';
 }
 
 /* I didn’t bother with coloring for the “visited” status for the anchor elements */
@@ -72,9 +63,6 @@ nav a:active{
     color: var(--link-active-color);
 }
 
-a:active{
-    color: var(--link-active-color);
-}
 a:hover {
     color: black;
 }
@@ -84,6 +72,7 @@ p{
     color: var(--alt-text-color);
     font-family: var(--nicer-font);
 }
+/* Includes "featured project" and "about me */
 main{
     display: flex;
     justify-content: right;
@@ -146,12 +135,15 @@ main{
     
 }
 /* Makes the hovering very visually noticeable */
-#featured-box a:hover, .project:hover{
+#featured-box>a:hover, .project:hover{
     /* for some reason, this color property didn't apply to all the items I inteded it to */
     color: black; 
     background-color: white;  
     cursor: pointer;
-    /* opacity: .5; */
+    opacity: .5;
+}
+hr{
+    border: 2.5px solid black;
 }
 
 #other-projects{
