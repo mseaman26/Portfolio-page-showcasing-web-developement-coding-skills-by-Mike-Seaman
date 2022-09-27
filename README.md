@@ -1,6 +1,9 @@
 # Portfolio-page-showcasing-web-developement-coding-skills-by-Mike-Seaman
 This is a website that serves as a portfolio for all of Mike Seaman's current and future coding projects.  It's destined to grow! At this time, the main page showcases four projects, two of which are finished and two of which are not.  The two completed projects are 1) a webpage code refactoring project and 2) a CSS cheatsheet that was created in collaboration with my classmate William Crane.  The two incomplete projects are 1) a baseball graph project and 2) a surfing highlight reel project. There is also a brief "About Me" section so the user can feel like they've gotten to know me a little bit. When the user clicks on any of the links, they are taken to another page.  Some of those pages are rendered from HTML files that are within the project itself.  The baseball project, for example, loads a new html file and there are 6 links in that page, each leading to yet another html file.  For the baseball project, I decided to use a separate CSS file called "baseball.css."  I wasn't sure if this is common practice, but I wanted to try to separate the styling.  
 
+## Overview of the Webpage:
+<img src="./assets/images/portfolio screenshot.png" alt="Alt text" title="Optional title" style="max-width: 300px">
+
 ## Link to the Webpage
 https://mseaman26.github.io/Portfolio-page-showcasing-web-developement-coding-skills-by-Mike-Seaman/
 
@@ -15,7 +18,7 @@ This project primarily involved the HTML and CSS languages. However I also used 
 - variables, for reuse of colors
 
 ## Notable Methods
-- I had originally experimented with using a lot of custom HTML tags, but learned that this is not best practice, so I refactored my code to use proper semantic HTML elements.  Below is an example of the code before
+- I had originally experimented with using a lot of custom HTML tags, but learned that this is not best practice, so I refactored my code to use proper semantic HTML elements.  Below is an example of the code before:
 
 
 ```html
@@ -68,7 +71,7 @@ and here is the code after:
 
 - I split up the css styling into two separate files.  This is another method that left me uncertain as to weather or not I was using best practice, but again, it got the results I intended
 
-- I assigned the width of some elements to a percentage of the screen width.  I would then use  media queries to change that percentage (make it larger) when the screen got smaller.  I imagine I'll learn a better way to do this as I further my knowledge. Below is a snippet shoeing those media queries
+- I assigned the width of some elements to a percentage of the screen width.  I would then use  media queries to change that percentage (make it larger) when the screen got smaller. Below is a snippet showing and example of those media queries
 
 ```css
 @media screen and (max-width: 992px) {
@@ -96,5 +99,12 @@ and here is the code after:
 - Visual design and aesthetics in general are also not my strong suits
 - Organization of code is crucial and must be practiced from the beginning of any project
 - I still enjoy learning code!
+<br>
+<br>
+## -By Michael Seaman
+
+## Author Links
+[LinkedIn](https://www.linkedin.com/in/michael-seaman-120a59250/)
+[GitHub](https://github.com/mseaman26)
 
 
