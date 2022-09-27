@@ -13,7 +13,7 @@ body{
     /* I added “position: relative” because I thought later it might help if I decided to include any items with absolute positioning within the body */
     position: relative;
     height: 1532px;
-    /* The background picture is a photo taken by a friend of mine.  It is of ocean beach during an historic swell, taken from way up on top of the hill */
+    /* The background picture is a photo taken by a friend of mine.  It is of Ocean Beach, SF during an historic swell, taken from way up on top of the hill */
     background-image: url(./Images/ocean_beach.JPG);
     background-repeat: repeat-y;
     background-size: cover;
@@ -29,7 +29,9 @@ header, header p{
     padding-left: 10px;
     color: var(--header-text-color)
 }
-
+h1{
+    text-align: center;
+}
 h2{
     text-align: center;
     color: var(--link-color);
