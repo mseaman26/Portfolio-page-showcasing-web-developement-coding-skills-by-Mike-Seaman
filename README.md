@@ -66,7 +66,7 @@ and here is the code after:
     </main>
 ```
 
-
+- I left a "TODO:" comment and installed the TODO highlighter extension
 - I used a reset.css file.  I simply took one from one of our activities, figuring this was good practice
 
 - I split up the css styling into two separate files.  This is another method that left me uncertain as to weather or not I was using best practice, but again, it got the results I intended

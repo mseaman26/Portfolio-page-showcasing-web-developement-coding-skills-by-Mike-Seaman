@@ -18,10 +18,10 @@ header{
     padding-left: 10px;
     color: var(--header-text-color)
 }
-header h1{
+h1{
     font-size: 40px;
     padding-bottom: 10px;
-
+    text-align: center;
 }
 body{
 
@@ -30,26 +30,18 @@ body{
     justify-content: space-around;
 
 }
-h1{
-    text-align: center;
-}
 .division{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     position: relative;
     flex: 1 1 30%;
-    /* height: 400px; */
-    width: 30%;
     border: 5px solid black;
     margin: 10px;
-    /* display: block; */
     text-align: center;
     min-width: 300px;
-
-
 }
-.division img{
+img{
     width: 100%;
     height: auto;
 }
@@ -58,8 +50,7 @@ a{
     color: black;
 
 }
-
-
+/* Styling for the bigger version of the graph displayed after clicking on any of the “division” links */
 .big-graph{
     width: 100%;
     height:auto
